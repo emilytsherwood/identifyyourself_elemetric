@@ -1,6 +1,7 @@
 //  Including Dependencies
 var React = require('react');
 
+var Main = require ('./Main');
 var LandingPage = require('./children/LandingPage');
 var InputQuestion = require('./children/InputQuestion');
 var PicQuestion = require('./children/PicQuestion');
