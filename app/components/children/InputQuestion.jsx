@@ -23,4 +23,19 @@ var InputQuestion = React.createClass({
             </div>
             )
         },
+
+ saveAndContinue: function(e) {
+    e.preventDefault()
+
+    // Get values via this.refs
+    var data = {
+      name     : this.refs.name.getDOMNode().value,
+      nickname : this.refs.nickname.getDOMNode().value,
+    }
+
+    this.props.saveAnswers(data)
+    this.props.nextQuestion()
+  }
 })
+
+module.exports = InputQuestion;

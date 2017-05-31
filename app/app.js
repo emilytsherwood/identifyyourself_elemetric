@@ -6,7 +6,7 @@ var InputQuestion = require('./components/children/InputQuestion');
 var PicQuestion = require('./components/children/PicQuestion');
 var MultiQuestion = require('./components/children/MultiQuestion');
 var DisplayAnswers = require('./components/children/DisplayAnswers');
-var assign = require('objects-assign');
+var assign = require('object-assign');
 
 var answers = {
     name : null,
