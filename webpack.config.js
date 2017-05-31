@@ -7,12 +7,15 @@ module.exports = {
   output: {
     filename: "public/bundle.js"
   },
-
+  resolve : {
+    extensions: ['', '.js', '.jsx']
+  },
   // This section desribes the transformations we will perform
   module: {
     loaders: [
       {
         // Only working with files that in in a .js or .jsx extension
+        exclude: /(node_modules)/,
         test: /\.jsx?$/,
         // Webpack will only process files in our app folder. This avoids processing
         // node modules and server files unnecessarily
