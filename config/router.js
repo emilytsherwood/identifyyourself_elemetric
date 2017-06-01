@@ -12,8 +12,6 @@ import { DisplayAnswers } from '../app/components/children/DisplayAnswers';
 const router = (
 <Router history={hashHistory}>
     <Route path='/' component={Main}>
-        {/*<Route path='/profile' component={UserProfile} />
-        <Route path='/projects/new' component={Form} />*/}
         <IndexRoute component={LandingPage} />
     </Route>
 </Router>
