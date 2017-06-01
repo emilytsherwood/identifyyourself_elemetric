@@ -2,6 +2,7 @@
 var React = require('react')
 var SelectBox = React.createFactory(require('../lib/select-box'))
 
+// Using react-select-box to format and create the component with a multi-select option for the user
 var div = React.createElement.bind(null,'div')
 var option = React.createElement.bind(null,'option')
 var h1 = React.createElement.bind(null,'h1')

@@ -44,6 +44,8 @@ var Main = React.createClass({
         })
     },
 
+    // Strategy to use a switch case to go between questions
+    // Users must have the ability to go to the previous question and change their answer (previousQuestion function)
     render: function() {
         // When the page is loaded, the first component will be the Landing Page (Step 1)
         switch (this.state.step) {
@@ -53,7 +55,7 @@ var Main = React.createClass({
             case 2: 
                 return <InputQuestion answers = {answers}
                                       nextQuestion = {this.nextQuestion}
-                                      saveAnswers = {this.saveAnswers} />
+                                      saveAnswers = {this.saveAnswers} /> 
             case 3:
                 return <PicQuestion answers = {answers}
                                     nextQuestion = {this.nextQuestion}

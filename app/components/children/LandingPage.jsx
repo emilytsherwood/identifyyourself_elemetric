@@ -1,6 +1,7 @@
 // Including dependencies
 var React = require('react');
 
+// Landing Page Component to welcome the user
 class LandingPage extends React.Component{
     render() {
         return (

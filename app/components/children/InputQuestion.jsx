@@ -1,5 +1,6 @@
 var React = require('react');
 
+// Component that includes a question where the user has to input answer
 class InputQuestion extends React.Component{
     render() {
         return ( 
