@@ -1,3 +1,4 @@
+// Including dependencies
 var React = require('react')
 var SelectBox = React.createFactory(require('../lib/select-box'))
 
@@ -21,22 +22,7 @@ var Example = React.createFactory(React.createClass({displayName: 'Example',
   render: function () {
     return(
       div({className: "example"},
-        h1(null, "Select Box Example"),
-        SelectBox(
-          {
-            label: "Favorite Color",
-            className: 'my-example-select-box',
-            onChange: this.handleChange,
-            value: this.state.color
-          },
-          option({key: 'red', value: 'red'}, 'Red'),
-          option({value: 'green'}, 'Green'),
-          option({value: 'blue'}, 'Blue'),
-          option({value: 'black'}, 'Black'),
-          option({value: 'orange'}, 'Orange'),
-          option({value: 'greenish'}, 'Light greenish with a little bit of yellow')
-        ),
-        h1(null, "Multi Select Example"),
+        h1(null, "Multi Select Question"),
         SelectBox(
           {
             label: "Favorite Colors",
