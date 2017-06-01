@@ -14,15 +14,7 @@ class LandingPage extends React.Component{
                         <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
                             <span className="fa fa-bars"></span>
                         </button>
-                            <a href="index.html" className="navbar-brand">Bethany</a>
-                        </div>
-                        <div className="collapse navbar-collapse navbar-right" id="mynavbar">
-                            <ul className="nav navbar-nav">
-                                <li className="active"><a href="#header">Home</a></li>
-                                <li><a href="#feature">Connections</a></li>
-                                <li><a href="#portfolio">Explore</a></li>
-                                <li><a href="#contact">Login/Logout</a></li>
-                            </ul>
+                            <a href="index.html" className="navbar-brand">Survey</a>
                         </div>
                     </div>
                 </div>
@@ -30,9 +22,9 @@ class LandingPage extends React.Component{
             {/*<!--/ nav-->*/}
             <div className="container text-center">
                 <div className="wrapper wow fadeInUp delay-05s" >
-                    <h3 className="title">Tribe</h3>
-                    <h4 className="sub-title">Face-to-Face Connections for Artists</h4>
-                    <button type="submit" className="btn btn-submit">Login/Signup</button>
+                    <h3 className="title">Identify Yourself</h3>
+                    <h4 className="sub-title">A Simple Survey</h4>
+                    <button type="submit" className="btn btn-submit">Begin Survey</button>
                 </div>
             </div>
         </div>
