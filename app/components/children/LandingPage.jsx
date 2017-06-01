@@ -1,8 +1,8 @@
 // Including dependencies
 var React = require('react');
 
-var LandingPage = createClass({
-    render: function() {
+class LandingPage extends React.Component{
+    render() {
         return (
     <header className="main-header" id="header">
         <div className="bg-color">
@@ -39,6 +39,6 @@ var LandingPage = createClass({
     </header> 
         );
     }
-})
+}
 
-module.exports = LandingPage;
+export { LandingPage };

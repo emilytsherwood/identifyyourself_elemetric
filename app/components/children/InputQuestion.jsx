@@ -1,7 +1,7 @@
 var React = require('react');
 
-var InputQuestion = React.createClass({
-    render: function() {
+class InputQuestion extends React.Component{
+    render() {
         return ( 
         <div>
         <h2>Basic Information</h2>
@@ -21,11 +21,11 @@ var InputQuestion = React.createClass({
             <button className="btn-primary" onClick = {this.nextQuestion}> Proceed </button>
             </ul>
             </div>
-            )
-        },
+            );
 
- saveAndContinue: function(e) {
-    e.preventDefault()
+//  saveAndContinue: function(e) {
+
+//      e.preventDefault()
 
     // Get values via this.refs
     var data = {
@@ -36,6 +36,6 @@ var InputQuestion = React.createClass({
     this.props.saveAnswers(data)
     this.props.nextQuestion()
   }
-})
+}
 
-module.exports = InputQuestion;
+export { InputQuestion };
